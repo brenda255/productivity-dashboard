@@ -79,3 +79,18 @@ main {
     margin-top: 60px;
     margin-left: 300px;
 }
+
+.main-container section {
+    display: none;
+    font-size: 30px;
+    border: solid #444 2px;
+    border-radius: 6px;
+    padding: 14px;
+}
+
+.main-container .active {
+    display: flex;
+    justify-content: center;
+
+
+}
