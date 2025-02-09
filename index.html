@@ -23,16 +23,20 @@
         <button id="menu-toggle">☰ Menu</button>
         <aside class="sidebar">
             <ul>
-                <li><button>To-Do List</button></li>
-                <li><button>Counter</button></li>
-                <li><button>Tip Calculator</button></li>
-                <li><button>Password Generator</button></li>
-                <li><button>Guess The Game</button></li>
+                <li><button class="sidebar-btn" id="to-do-list-btn">To-Do List</button></li>
+                <li><button class="sidebar-btn" id="counter-btn">Counter</button></li>
+                <li><button class="sidebar-btn" id="tip-calculator-btn">Tip Calculator</button></li>
+                <li><button class="sidebar-btn" id="pass-generator-btn">Password Generator</button></li>
+                <li><button class="sidebar-btn" id="guess-game-btn">Guess The Game</button></li>
             </ul>
         </aside>
         <main>
             <div class="main-container">
                 <section id="todo-list" class="active">To-Do List</section>
+                <div class="todo-header">
+                    <span id="todo-date" class="todo-date"></span>
+                    <h2 class="todo-title">My To-Do List</h2>
+                </div>
                 <section id="counter">Counter</section>
                 <section id="tip-calculator">Tip Calculator</section>
                 <section id="pass-generator">Password Generator</section>
