@@ -22,7 +22,6 @@ header {
 
 .name-title {
     text-align: center;
-    /* position: absolute; */
     font-size: 25px;
 }
 
@@ -36,30 +35,44 @@ header {
 }
 
 .bg-color-changer {
-    padding-right: 30px;
-    background-color: #3498db; /* Nice blue color */
-    color: white; /* White text */
-    border: none; /* Remove default border */
-    padding: 10px 20px; /* Increase padding */
-    font-size: 16px; /* Adjust text size */
-    font-weight: bold; /* Make text bold */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Show pointer cursor on hover */
+    margin-right: 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .bg-color-changer:hover {
-    background-color: #2980b9; /* Slightly darker blue */
-    transform: scale(1.05); /* Slightly enlarge button */
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
 
 .bg-color-changer:active {
-    background-color: #1c5985; /* Even darker blue */
-    transform: scale(0.95); /* Slightly shrink on click */
+    background-color: #1c5985;
+    transform: scale(0.95);
 }
 
-aside{
+#menu-toggle {
+    display: block;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: fixed;
+    top: 65.2px;
+    left: 15px;
+    z-index: 1001;
+}
+
+.sidebar {
     position: fixed;
     left: 0;
     width: 250px;
@@ -69,41 +82,49 @@ aside{
     border-radius: 12px;
     padding: 20px;
     box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
-    /* margin-top: 60px; */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
 }
+
+/* When sidebar is active (open) */
+.sidebar.active {
+    transform: translateX(0);
+}
+
 aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-aside li{
+aside li {
     margin: 20px;
 }
 
-aside button{
-width: 100%;
-padding: 15px;
-background-color: #444;
-color: white;
-border: none;
-border-radius: 6px;
-font-size: 18px;
-cursor: pointer;
-transition: background-color 0.3s ease;
+aside button {
+    width: 100%;
+    padding: 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 aside button:hover {
     background-color: #666;
 }
 
-
-
-
-
 main {
     margin-top: 60px;
     margin-left: 300px;
+}
+
+.main-container {
+    display: flex;
+    margin-left: 250px;
 }
 
 .main-container section {
@@ -119,4 +140,33 @@ main {
     justify-content: center;
 
 
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translate(-100%);
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .sidebar {
+        transform: translateX(0);
+    }
+    #menu-toggle {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .main-container {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
 }

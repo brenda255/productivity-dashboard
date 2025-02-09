@@ -33,3 +33,10 @@ bgChanger.addEventListener('click', function(){
     let hexColor = `#${redHex}${greenHex}${blueHex}`;
     document.body.style.backgroundColor = hexColor;
 } )
+
+const menuToggle = document.getElementById("menu-toggle");
+const sidebar = document.querySelector(".sidebar");
+
+menuToggle.addEventListener('click', function (){
+    sidebar.classList.toggle("active");
+})
