@@ -16,3 +16,20 @@ function updateClock(){
 
 setInterval(updateClock, 1000);
 updateClock();
+
+
+//Background Color Changer
+let bgChanger = document.querySelector(".bg-color-changer");
+
+bgChanger.addEventListener('click', function(){
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+
+    let redHex = red.toString(16).padStart(2, '0');
+    let greenHex = green.toString(16).padStart(2, '0');
+    let blueHex = blue.toString(16).padStart(2, '0');
+
+    let hexColor = `#${redHex}${greenHex}${blueHex}`;
+    document.body.style.backgroundColor = hexColor;
+} )
