@@ -27,7 +27,13 @@ header {
 }
 
 .digital-clock {
-    padding-left: 30px;}
+    background: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 16px;
+}
 
 .bg-color-changer {
     padding-right: 30px;
