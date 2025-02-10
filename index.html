@@ -32,11 +32,17 @@
         </aside>
         <main>
             <div class="main-container">
-                <section id="todo-list" class="active">To-Do List</section>
                 <div class="todo-header">
                     <span id="todo-date" class="todo-date"></span>
-                    <h2 class="todo-title">My To-Do List</h2>
                 </div>
+                <section id="todo-list" class="active">My To-Do List
+                </section>
+                <div class="todo-container">
+                    <input type="text" id="tastInput" placeholder="Add a task...">
+                    <button onclick="addTask()">+</button>
+                </div>
+                <ul id="taskList"></ul>
+
                 <section id="counter">Counter</section>
                 <section id="tip-calculator">Tip Calculator</section>
                 <section id="pass-generator">Password Generator</section>

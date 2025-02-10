@@ -104,3 +104,13 @@ guessGameBtn.addEventListener("click", function () {
     guessGameSection.classList.add('active');
     setActiveButton(guessGameBtn);
 });
+
+
+//to do list date
+function updateDate(){
+    let now = new Date();
+    let options = {month: 'short', day: 'numeric'};
+    let formattedDate = now.toLocaleDateString('en-US', options);
+    document.getElementById('todo-date').innerText = formattedDate;
+}
+updateDate();
