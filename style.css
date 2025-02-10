@@ -17,6 +17,10 @@ header {
     align-items: center;
     z-index: 1000;
 }
+body{
+    background-color: #847996;
+    color: #f1f1f1;
+}
 
 .name-title {
     text-align: center;
@@ -166,7 +170,7 @@ main {
     border-radius: 5px;
     font-size: 18px;
     position: absolute;
-    right: 120px;
+    right: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,7 +242,9 @@ ul li.completed {
     background: #310a31;
 }
 
-
+#todo-list { 
+    display: block;
+}
 
 
 

@@ -114,3 +114,9 @@ function updateDate(){
     document.getElementById('todo-date').innerText = formattedDate;
 }
 updateDate();
+
+//add task function
+function addTask(){
+    let taskInput = document.getElementById("taskInput").value;
+        alert(taskInput);
+}
