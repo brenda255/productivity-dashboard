@@ -120,3 +120,6 @@ function addTask(){
     let taskInput = document.getElementById("taskInput").value;
         alert(taskInput);
 }
+
+//To Do List Section 
+

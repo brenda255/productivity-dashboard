@@ -41,18 +41,19 @@
                     </section>
 
                     <h3 class="task-sub-title">What Needs To Get Done Today?</h3>
-                    
+
                     <div class="all-tasks">
                         <h2 class="task-list-title">My Lists</h2>
                         <ul class="task-list">
-                            <li class="active-list">Youtube</li>
-                            <li>Work</li>
-                            <li>Grocery</li>
+                            <li class="list-name active-list">Youtube</li>
+                            <li class="list-name">Work</li>
+                            <li class="list-name">Grocery</li>
                         </ul>
 
                         <form action="">
-                            <input type="text" class="new-list" placeholder="Add your list name" aria-label="add your list name">
-                       <button class="btn-list">+</button>
+                            <input type="text" class="new-input" placeholder="Add your list name"
+                                aria-label="add your list name">
+                            <button class="btn create">+</button>
                         </form>
                     </div>
 
@@ -67,41 +68,45 @@
                                 <div class="task">
                                     <input type="checkbox" id="task-1">
                                     <label for="task-1">
-                                    <span class="custom-checkbox"></span>
-                                    task 1
-                                </label>
+                                        <span class="custom-checkbox"></span>
+                                        task 1
+                                    </label>
                                 </div>
                                 <!-- /task 1-->
 
                                 <div class="task">
                                     <input type="checkbox" id="task-2">
                                     <label for="task-2">
-                                    <span class="custom-checkbox"></span>
-                                    task 2
-                                </label>
+                                        <span class="custom-checkbox"></span>
+                                        task 2
+                                    </label>
                                 </div>
                                 <!-- /task 2-->
 
                                 <div class="task">
                                     <input type="checkbox" id="task-3">
                                     <label for="task-3">
-                                    <span class="custom-checkbox"></span>
-                                    task 3
-                                </label>
+                                        <span class="custom-checkbox"></span>
+                                        task 3
+                                    </label>
                                 </div>
                                 <!-- /task 3-->
                             </div>
 
 
-                            <div class="new-task-creator">  <form action="">
-                                <input type="text" class="new-task-name" placeholder="Add your list name" aria-label="add your task name">
-                           <button class="btn-task">+</button>
-                            </form></div>
-                            <div class="delete-stuff"></div>
-                        <button class="btn-delete">Clear Completed Tasks</button>
-                        <button class="btn-delete">Delete List</button>
-                        <div class="new-tasks"></div>
-                    </div>
+                            <div class="new-task-creator">
+                                <form action="">
+                                    <input type="text" class="new-input" placeholder="Add your list name"
+                                        aria-label="add your task name">
+                                    <button class="btn create">+</button>
+                                </form>
+                            </div>
+                            <div class="delete-stuff">
+                                <button class="btn delete">Clear Completed Tasks</button>
+                                <button class="btn delete">Delete List</button>
+                                <div class="new-tasks"></div>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -126,12 +131,12 @@
                             label
                         </li>
                 </div> -->
-
+                </div>
                 <section id="counter">Counter</section>
                 <section id="tip-calculator">Tip Calculator</section>
                 <section id="pass-generator">Password Generator</section>
                 <section id="guess-game">Guess The Game</section>
-            </div>
+
         </main>
     </div>
     <script src="script.js"></script>
