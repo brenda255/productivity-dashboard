@@ -270,6 +270,7 @@ ul li.completed {
     font-size: 15px;
     line-height: 30px;
     list-style: circle;
+    background: rgb(190, 170, 170);
 
 }
 
@@ -287,7 +288,7 @@ ul li.completed {
 }
 
 .new-input {
-    background: transparent;
+    background: whitesmoke;
     border: 0;
     color: black;
     border-bottom: 1px solid currentColor;
